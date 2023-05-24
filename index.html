@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="mycontainer">
+    <div class="mynavbar">
+      <div class="flexitem">
+        <h1 onclick="scrolling(0)">
+          <img src="./images/home.png" class="navlinkimg" alt="Home" />
+          Tigist Meresa
+
+        </h1>
+      </div>
+      <div class="flexitem end">
+        <h3 onclick="scrolling(500)">
+          <img src="./images/avatar.png" class="navlinkimg" alt="About_Me" />
+          About
+        </h3>
+        <h3 onclick="scrolling(1000)">Projects</h3>
+        <h3 onclick="scrolling(2000)">Experience</h3>
+        <h3 onclick="scrolling(2900)" class="navlink">
+          <img src="./images/educationIcon.png.crdownload" class="navlinkimg" alt="education" />
+          Education
+        </h3>
+        <h3 onclick="scrolling(5000)">
+          <img src="./images/gmail.png" class="navlinkimg" alt="Contact" />
+          Contact
+        </h3>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="bgimg-1 aboutme">
+        <div class="flexitem center">
+          <img class="aboutme-image" src="./images/MyProfilePic3.png" />
+        </div>
+        <div class="flexitem center column">
+          <h1>Tigist Meresa</h1>
+          <h3>Software Engineer</h3>
+        </div>
+      </div>
+      <!-- <div class="bgimg-1">
+        <div class="flexitem center">
+          <h1>Projects</h1>
+        </div>
+      </div> -->
+      <div class="bgimg-1 greyrow ">
+        <div class="eig">
+          <div class="flexitem center column aboutmetext">
+            <h1>About me</h1>
+            <h3>Software Engineer based in Seattle, WA. I came to USA to study my masters degree in Information Systems
+              at University of Virginia and graduated in 2007. My first project was at Microsoft in Redmond, WA. I have
+              always admired the potential for technology and have been interested in learning more about it. Currently,
+              I joined Coding Dojo bootcamp to further upgrade my technical skills and join back the tech industries
+              where I have been working for a while as Systems Admin. My goals are to focus on clean code and newest
+              technologies.
+            </h3>
+          </div>
+          <!-- =================Carousel============== -->
+
+          <div class="flexitem center column">
+            <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="myCarousel" data-slide-to="0" class="active"> </li>
+                <li data-target="myCarousel" data-slide-to="1"> </li>
+                <li data-target="myCarousel" data-slide-to="2"> </li>
+
+              </ol>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="overlay-image" style="background-image:url(./images/pic1.jpg)">
+                  </div>
+                  <div class="containerr">
+                    <h2>Headline</h2>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="overlay-image" style="background-image:url(./images/pic2.jpg)">
+                  </div>
+                  <div class="containerr">
+                    <h2>Headline</h2>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="overlay-image" style="background-image:url(./images/pic1best.jpg)">
+                  </div>
+                  <div class="containerr">
+                    <h2>Headline</h2>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="sr-only">Previous</span>
+                <span class="span carousel-control-prev-icon" aria-hidden="true"></span>
+                <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
+                  <span class="sr-only">Next</span>
+                  <span class="span carousel-control-next-icon" aria-hidden="true"></span>
+
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =================Carousel ends ============== -->
+
+      <div class="bgimg-2">
+        <div class="flexitem center">
+          <h1>Here are some of the projects I have built</h1>
+          <!-- fix the text visibility============== -->
+        </div>
+      </div>
+
+      <div class="bgimg-1 greyrow">
+        <div class="flexitem center">
+          <h1>Project #1</h1>
+
+          <!-- <img class="aboutme-image" src="./images/ProfilePic_Work.png" /> -->
+        </div>
+        <div class="flexitem center column">
+          <h1>Project #2</h1>
+          <!-- need to add the height to accommodate more proojects -->
+          <p></p>
+        </div>
+      </div>
+
+
+
+      <div class="bgimg-3">
+        <div class="flexitem center">
+          <h1>Experience</h1>
+        </div>
+      </div>
+      <div class="bgimg-1 greyrow">
+        <div class="flexitem center column company">
+          <div class="companyContainer">
+            <img class="company-image" src="./images/Salesforce.png" alt="Salesforce">
+            <h3 class="company-text e">Systems Admin in Bellevue, WA (Apr 2020 - Dec 2022)</h3>
+            <h4 class="company-text">Team - Enterprise Security</h4>
+          </div>
+          <div class="companyContainer"><img class="company-image" src="./images/boeing.png" alt="Boeing">
+            <h3 class="company-text">Azure AD Admin in Tukwila, WA (Dec 2018 - Apr 2020)</h3>
+            <h4 class="company-text">Team - Digital Aviation</h4>
+          </div>
+<div class="companyContainer">
+  <img src="./images/Microsoft.png" class="company-image" alt="Microsoft">
+  <h3 class="company-text">O365 Admin in Redmond, WA (Feb 2015 - Dec 2018)</h3>
+  <h4 class="company-text">Team 1 - Customer Promise <br/><br/>Team 2 - Identity (Conditional Access)</h4>
+</div>
+        </div>
+        
+      </div>
+
+      <!-- fix the text color============= -->
+    </div>
+  </div>
+  <div class="bgimg-3">
+    <div class="flexitem center">
+      <h1>Education</h1>
+    </div>
+  </div>
+  <div class="bgimg-1 greyrow">
+    <div class="flexitem center column company">
+      <div class="companyContainer">
+        <img class="company-image" src="./images/Dojo.png" alt="Dojo">
+        <h3 class="company-text">Coding Dojo - Software Development Boot Camp (Feb 2023 - May 2023)</h3>
+      </div>
+      <div class="companyContainer"><img class="company-image" src="./images/UVA.png" alt="UVA">
+        <h3 class="company-text">University of Virginia - Information Systems (Jun 2005 - Jun 2007) </h3>
+      </div>
+      <div class="companyContainer">
+        <img src="./images/AAU.png" class="company-image" alt="AAU">
+        <h3 class="company-text">Addis Ababa University - Information Systems (Apr 2002 - Jun 2004)</h3>
+      </div>
+      <div class="companyContainer"><img class="company-image" src="./images/Cisco.png" alt="Cisco_Techno">
+        <h3 class="company-text">Cisco Networking Certificate - at Institute of Technology (AAU) Jun 2003 - Jun 2004
+        </h3>
+      </div>
+
+      <!-- fix the text color============= -->
+    </div>
+  </div>
+  <div class="footer">
+    <h2 class="item">Contact me</h2>
+
+    <div class="footerimages item">
+      <div class="footerItem" onclick="window.open('https://github.com/tmeresa19')">
+
+        <img class="footerimage" onmouseover="show('GithubText')" onmouseout="hide('GithubText')"
+          src="./images/github.png" alt="github" />
+        <h3 id="GithubText" class="text">Github</h3>
+      </div>
+      <!-- ========fix the link for email -->
+      <div class="footerItem">
+        <img class="footerimage"
+          onclick="window.open('https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmXGGVKLzgwFpDZNkRKQbKkSVpflZKtkTplJlXZDzVLvfTzrxqPpCxRJCnKcHSgDXZzxnC')"
+          onmouseover="show('GmailText')" onmouseout="hide('GmailText')" src="./images/gmail.png" alt="gmail" />
+        <h3 id="GmailText" class="text">Email</h3>
+      </div>
+      <div class="footerItem" onclick="window.open('https://www.linkedin.com/in/tigist-meresa-a94450133/')">
+        <img class="footerimage" onmouseover="show('LinkedinText')" onmouseout="hide('LinkedinText')"
+          src="./images/linkedin.png" alt="linkedin" />
+        <h3 id="LinkedinText" class="text">Linkedin</h3>
+      </div>
+      <!-- when clicking the resume image, anyone shouldn't get "You need access" message rather, the resume should be opened for them in gmail drive or in pdf -->
+      <div class="footerItem"
+        onclick="window.open('https://docs.google.com/document/d/1PaGvqehvcj5hPY6KKm1VZCH2MKYiN79M8MCeXURuTQc/edit')">
+        <img class="footerimage" onmouseover="show('ResumeText')" onmouseout="hide('ResumeText')" src="./images/pdf.png"
+          alt="Resume" />
+        <h3 id="ResumeText" class="text">Resume</h3>
+      </div>
+    </div>
+    <h4 class="item h4">© 2023 Tigist Meresa</h4>
+
+    <div class="footerimages">
+
+    </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+</html>
